@@ -16,7 +16,7 @@ const Details = () => {
     }, [productId]);
 
     if (!product) {
-        return <div>Loading...</div>; // Display loading while fetching
+        return 
     }
 
     return (
