@@ -3,7 +3,8 @@ import { useParams } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa";
 import { CiShoppingCart } from "react-icons/ci";
 import { CartContext } from "./MainLayout";
-
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 const Details = () => {
     const { productId } = useParams();
@@ -13,6 +14,8 @@ const Details = () => {
     const handleAddToCart = (product) => {
         setCarts([...carts, product]);
         console.log(product);
+        toast.success("This is a success alert!");
+
     };
 
     useEffect(() => {
@@ -25,14 +28,14 @@ const Details = () => {
     }, [productId]);
 
     if (!product) {
-        return <div>Loading...</div>;
+        return ;
     }
 
     // console.log(product.product_id);
     return (
         
         <div className="p-3  flex flex-col md:w-11/12 md:mx-auto mb-5 bg-cover h-[250px] ">
-
+ <ToastContainer />
                 <div className="flex flex-col relative">
                 <div className="flex justify-center text-3xl font-bold text-white">
                     <span>Product Details</span>
@@ -58,7 +61,7 @@ const Details = () => {
                     <span className="text-xl font-bold">Price: ${product.price}</span>
                     
                   
-                    {product.availability ? <div className="bg-green-200 border-2 border-green-800 rounded-xl w-1/2 text-center">In Stock</div> : <div className="bg-red-200 border-2 border-red-800 rounded-xl w-1/2 text-center ">Not Available</div> }
+                    {product.availability ? <div className="bg-green-200 border-2 border-green-800 rounded-xl w-1/3 text-center text-lg font-semibold">In Stock</div> : <div className="bg-red-200 border-2 border-red-800 rounded-xl w-1/2 text-center ">Not Available</div> }
 
                     <span className="text-black">{product.description}</span>
 
@@ -94,6 +97,7 @@ const Details = () => {
                     </div>
 
                 </div>
+                
         </div>
         
     );

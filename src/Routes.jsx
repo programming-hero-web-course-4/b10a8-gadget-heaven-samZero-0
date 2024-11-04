@@ -1,5 +1,6 @@
 import {
     createBrowserRouter,
+    Navigate,
     
   } from "react-router-dom";
 
@@ -27,6 +28,12 @@ import { WishList } from "./components/Wishlist";
         path:'/dashboard',
         element: <Dashboard></Dashboard>,
         children:[
+          {
+            
+              index: true, 
+              element: <Navigate to="cart" replace /> 
+           
+          },
           {
             path: 'cart',
             element: <Cart></Cart>

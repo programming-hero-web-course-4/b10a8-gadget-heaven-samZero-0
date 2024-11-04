@@ -16,14 +16,18 @@ const Dashboard = () => {
                 </div>
 
                 <div className="flex justify-center gap-3 mt-10">
-                    <NavLink to='cart'>
-                    <button  className="p-3 rounded-xl bg-cover border border-white text-white w-[100px] ">Cart</button>
+                    <NavLink to='cart' className={({ isActive }) =>
+                                isActive ? "active p-3 rounded-xl bg-white border border-white text-black w-[100px] text-center text-lg font-bold" : "p-3 rounded-xl bg-cover border border-white text-white w-[100px] text-center text-lg"
+                            }>
+                    Cart
                     </NavLink>
 
 
-                  <NavLink to='wishlist'>
-                  <button className="p-3 rounded-xl bg-cover border border-white text-white w-[100px]">Wishlist</button>
-                  </NavLink>
+                    <NavLink to='wishlist' className={({ isActive }) =>
+                                isActive ? "active p-3 rounded-xl bg-white border border-white text-black w-[100px] text-center text-lg font-bold" : "p-3 rounded-xl bg-cover border border-white text-white w-[100px] text-center text-lg"
+                            }>
+                    Wishlist
+                    </NavLink>
 
                 </div>
 

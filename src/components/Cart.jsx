@@ -1,6 +1,7 @@
 import { BiSort } from "react-icons/bi";
 import { useContext } from "react";
 import { CartContext } from "../pages/MainLayout";
+import { TbXboxX } from "react-icons/tb";
 
 
 export function Cart() {
@@ -15,12 +16,12 @@ export function Cart() {
                 <div className="flex gap-3 items-center">
                     <span className="text-2xl font-bold">Total Cost: ${totalCost.toFixed(2)}</span>
                     
-                    <div className="flex gap-2 items-center border-white rounded-xl p-3 border border-black">
+                    <div className="flex gap-2 items-center  rounded-xl p-3 border border-black">
                         <button>Sort by Price</button>
                         <BiSort />
                     </div>
 
-                    <div className="flex gap-2 items-center border-white rounded-xl p-3 border border-black">
+                    <div className="flex gap-2 items-center  rounded-xl p-3 border border-black">
                         <button>Purchase</button>
                     </div>
                 </div>
@@ -37,7 +38,7 @@ export function Cart() {
                                     <div>Price: ${product.price}</div>
                                 </div>
                             </div>
-                            <button className="text-red-500 font-bold">Remove</button>
+                            <button className="text-red-500 font-bold text-4xl"><TbXboxX></TbXboxX></button>
                         </div>
                     ))
                 ) : (
