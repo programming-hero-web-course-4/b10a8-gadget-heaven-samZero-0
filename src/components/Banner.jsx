@@ -12,12 +12,13 @@ const Banner = () => {
             <button className="bg-white text-cover p-3 text-xl font-bold rounded-xl mt-5">Shop Now</button>
         </div>
 
-        <div className="md:absolute md:top-[580px] md:left-[550px] border-2 border-white rounded-xl p-3">
+        <div className="md:absolute md:top-[580px] md:left-[420px] border-2 border-white rounded-xl p-3">
             <img src="/public/banner.jpg" alt="" className="md:h-[500px] h-[300px] object-cover"/>
         </div>
 
         </div>
     );
 };
+
 
 export default Banner;

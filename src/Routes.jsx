@@ -8,6 +8,8 @@ import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import Statistics from "./pages/Statistics";
 import Details from "./pages/Details";
+import { Cart } from "./components/Cart";
+import { WishList } from "./components/Wishlist";
 
 
   const router = createBrowserRouter([
@@ -23,7 +25,19 @@ import Details from "./pages/Details";
         },
        {
         path:'/dashboard',
-        element: <Dashboard></Dashboard>
+        element: <Dashboard></Dashboard>,
+        children:[
+          {
+            path: 'cart',
+            element: <Cart></Cart>
+          },
+          {
+            path: 'wishlist',
+            element: <WishList></WishList>
+          }
+         
+
+        ]
 
        },
        {

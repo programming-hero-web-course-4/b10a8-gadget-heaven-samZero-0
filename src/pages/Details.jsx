@@ -1,13 +1,22 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { FaRegHeart } from "react-icons/fa";
+import { CiShoppingCart } from "react-icons/ci";
+import { CartContext } from "./MainLayout";
+
 
 const Details = () => {
     const { productId } = useParams();
     const [product, setProduct] = useState(null);
+    const { carts, setCarts } = useContext(CartContext); 
+
+    const handleAddToCart = (product) => {
+        setCarts([...carts, product]);
+        console.log(product);
+    };
 
     useEffect(() => {
-       
-        fetch(`../products.json`) 
+        fetch(`../products.json`)
             .then((res) => res.json())
             .then((data) => {
                 const foundProduct = data.find((item) => item.product_id === productId);
@@ -16,10 +25,12 @@ const Details = () => {
     }, [productId]);
 
     if (!product) {
-        return 
+        return <div>Loading...</div>;
     }
 
+    // console.log(product.product_id);
     return (
+        
         <div className="p-3  flex flex-col md:w-11/12 md:mx-auto mb-5 bg-cover h-[250px] ">
 
                 <div className="flex flex-col relative">
@@ -64,16 +75,27 @@ const Details = () => {
                         <span className="font-bold">Rating</span>
                     </div>
 
-                    <div>
-                        <button className="p-3 bg-cover rounded-xl text-white">Add to Cart</button>
+                    <div className="flex gap-4 items-center">
+                    <div className="flex  items-center bg-cover rounded-xl">
+                        <button onClick={()=>handleAddToCart(product)} className="p-3  text-white">Add to Cart</button>
+                        <CiShoppingCart className="mr-4 text-2xl font-bold text-white"></CiShoppingCart> 
+                        
+                    </div>
+                    
+
+                       
+                    <div className="p-3 border border-gray-300 rounded-full cursor-pointer">
+                    <FaRegHeart />
                     </div>
 
+                    </div>
 
 
                     </div>
 
                 </div>
         </div>
+        
     );
 };
 
