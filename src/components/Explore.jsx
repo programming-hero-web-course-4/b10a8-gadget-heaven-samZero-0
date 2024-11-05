@@ -27,7 +27,7 @@ const Explore = ({gadgets}) => {
 
    let filtered = selected?gadgets.filter(gadget => gadget.category === selected) : gadgets;
 
-    filtered = filtered.slice(0,6);
+    
 
     return (
         <div className="md:w-11/12 md:mx-auto mb-5">

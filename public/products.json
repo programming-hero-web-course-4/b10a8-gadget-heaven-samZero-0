@@ -19,7 +19,7 @@
       "description": "Ultralight laptop powered by Apple M2 chip, perfect for professionals.",
       "Specification": ["8GB RAM", "512GB SSD", "Apple M2"],
       "availability": true,
-      "rating": 4.7
+      "rating": 3.7
   },
   {
       "product_id": "LAP003",
@@ -29,8 +29,8 @@
       "price": 1299,
       "description": "Versatile 2-in-1 laptop with InfinityEdge touch display.",
       "Specification": ["16GB RAM", "512GB SSD", "Intel i7-1250U"],
-      "availability": false,
-      "rating": 4.6
+      "availability": true,
+      "rating": 2.6
   },
   {
       "product_id": "LAP004",
@@ -44,6 +44,28 @@
       "rating": 4.7
   },
   {
+    "product_id": "LAP002",
+    "product_title": "ASUS ROG Zephyrus G14",
+    "product_image": "https://i.ibb.co.com/XDMrFD4/rog.jpg",
+    "category": "Laptops",
+    "price": 1499,
+    "description": "Powerful and compact gaming laptop with AMD Ryzen 9 processor and GeForce RTX 3060.",
+    "Specification": ["16GB RAM", "1TB SSD", "NVIDIA GeForce RTX 3060"],
+    "availability": true,
+    "rating": 4.6
+},
+{
+    "product_id": "LAP003",
+    "product_title": "MSI GE76 Raider",
+    "product_image": "https://i.ibb.co.com/LNmHRxL/msi.webp",
+    "category": "Laptops",
+    "price": 1999,
+    "description": "High-end gaming laptop with 17.3-inch display, Intel Core i9 processor, and RTX 3070 graphics.",
+    "Specification": ["32GB RAM", "1TB SSD", "NVIDIA GeForce RTX 3070"],
+    "availability": true,
+    "rating": 4.7
+},
+  {
       "product_id": "SPH001",
       "product_title": "iPhone 15 Pro Max",
       "product_image": "https://i.ibb.co.com/S36kKfh/i-Phone-15-Plus-2-6-5363.jpg",
@@ -52,7 +74,7 @@
       "description": "Latest iPhone with A17 Pro chip and pro camera system.",
       "Specification": ["256GB Storage", "8GB RAM", "48MP Triple Camera"],
       "availability": true,
-      "rating": 4.8
+      "rating": 3.8
   },
   {
       "product_id": "SPH002",
@@ -85,7 +107,7 @@
       "description": "Premium Android tablet with S Pen support.",
       "Specification": ["128GB Storage", "8GB RAM", "11-inch AMOLED"],
       "availability": true,
-      "rating": 4.6
+      "rating": 1.6
   },
   {
       "product_id": "SWT001",
@@ -96,7 +118,7 @@
       "description": "Advanced smartwatch with health monitoring features.",
       "Specification": ["Temperature Sensor", "ECG", "Water-Resistant"],
       "availability": true,
-      "rating": 4.8
+      "rating": 3.8
   },
   {
       "product_id": "SWT002",
@@ -107,6 +129,6 @@
       "description": "Premium smartwatch with rotating bezel and Wear OS.",
       "Specification": ["Super AMOLED", "BioActive Sensor", "5ATM Water Resistance"],
       "availability": true,
-      "rating": 4.7
+      "rating": 1.7
   }
 ]

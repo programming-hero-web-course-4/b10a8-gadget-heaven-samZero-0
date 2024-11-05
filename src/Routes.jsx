@@ -11,6 +11,7 @@ import Statistics from "./pages/Statistics";
 import Details from "./pages/Details";
 import { Cart } from "./components/Cart";
 import { WishList } from "./components/Wishlist";
+import NotFound from "./pages/NotFound";
 
 
   const router = createBrowserRouter([
@@ -41,9 +42,8 @@ import { WishList } from "./components/Wishlist";
           {
             path: 'wishlist',
             element: <WishList></WishList>
-          }
+          },
          
-
         ]
 
        },
@@ -54,8 +54,15 @@ import { WishList } from "./components/Wishlist";
        {
         path:'/details/:productId',
         element: <Details></Details>
-       }
+       },
+       {
+        path: '*', 
+        element: <NotFound /> 
+      }
+      
+       
       ]
+      
     },
   ]);
   
