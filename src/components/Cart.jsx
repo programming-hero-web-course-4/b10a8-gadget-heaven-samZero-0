@@ -69,7 +69,7 @@ export function Cart() {
                   <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
                 <div className="modal-box">
                     <div className="flex justify-center mt-4 mb-4">
-                        <img src='/public/Group.png' alt="" />
+                        <img src='/Group.png' alt="" />
                     </div>
                     <h3 className="font-bold text-xl flex justify-center">Payment Successful</h3>
                     <p className="mt-5 flex justify-center">Thanks for purchasing</p>
