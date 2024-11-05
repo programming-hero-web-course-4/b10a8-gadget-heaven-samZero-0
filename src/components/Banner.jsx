@@ -15,8 +15,8 @@ const Banner = () => {
             </Link>
         </div>
 
-        <div className="md:absolute md:top-[65%] md:left-[29%] border-2 border-white rounded-xl p-3">
-            <img src="/public/banner.jpg" alt="" className="md:h-[500px] h-[300px] object-cover"/>
+        <div className="lg:absolute lg:top-[65%] lg:left-[29%] border-2 border-white rounded-xl p-3">
+            <img src="/banner.jpg" alt="" className="md:h-[500px] h-[300px] object-cover"/>
         </div>
 
         </div>

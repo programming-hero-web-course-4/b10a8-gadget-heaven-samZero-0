@@ -1,9 +1,18 @@
 
 
 const Footer = () => {
+
     return (
+
         <div>
+<div className="flex flex-col items-center bg-base-300 mt-5 pt-5">
+            <span className="text-2xl font-bold">Gadget Heaven</span>
+          
+          <span className="mt-5"> Leading the way in cutting-edge technology and innovation.</span> </div>
+
             <footer className="footer bg-base-300 text-base-content p-10">
+
+          
   <nav>
     <h6 className="footer-title">Services</h6>
     <a className="link link-hover">Branding</a>

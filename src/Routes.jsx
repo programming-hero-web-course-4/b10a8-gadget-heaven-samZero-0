@@ -12,6 +12,7 @@ import Details from "./pages/Details";
 import { Cart } from "./components/Cart";
 import { WishList } from "./components/Wishlist";
 import NotFound from "./pages/NotFound";
+import Trending from "./pages/Trending";
 
 
   const router = createBrowserRouter([
@@ -58,7 +59,12 @@ import NotFound from "./pages/NotFound";
        {
         path: '*', 
         element: <NotFound /> 
+      },
+      {
+        path: '/trending', 
+        element: <Trending /> 
       }
+      
       
        
       ]

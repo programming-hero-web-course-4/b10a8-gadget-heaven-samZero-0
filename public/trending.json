@@ -1,0 +1,68 @@
+[
+    {
+        "product_id": "VR001",
+        "product_title": "Meta Quest 3",
+        "product_image": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac",
+        "category": "VR Headsets",
+        "price": 499,
+        "description": "Latest mixed reality headset with 4K+ Infinite Display and powerful Snapdragon XR2 Gen 2.",
+        "Specification": ["128GB Storage", "8GB RAM", "90Hz Refresh Rate", "Mixed Reality Passthrough"],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "TWS001",
+        "product_title": "Sony WF-1000XM5",
+        "product_image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df",
+        "category": "Wireless Earbuds",
+        "price": 299,
+        "description": "Premium wireless earbuds with industry-leading noise cancellation and Hi-Res audio.",
+        "Specification": ["8 hours battery life", "Wireless charging", "LDAC support", "Adaptive Sound Control"],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "CAM001",
+        "product_title": "DJI Pocket 3",
+        "product_image": "https://images.unsplash.com/photo-1516724562728-afc824a36e84",
+        "category": "Cameras",
+        "price": 519,
+        "description": "Compact gimbal camera with 1-inch sensor and 4K/120fps recording capabilities.",
+        "Specification": ["1-inch Sensor", "4K/120fps", "3-axis stabilization", "2.4\" Touchscreen"],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "GAM001",
+        "product_title": "PlayStation Portal",
+        "product_image": "https://images.unsplash.com/photo-1486401899868-0e435ed85128",
+        "category": "Gaming",
+        "price": 999,
+        "description": "Remote player for PS5 with 8-inch LCD screen and DualSense features.",
+        "Specification": ["8-inch LCD", "1080p/60fps streaming", "DualSense haptics", "Wi-Fi 6"],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": "SPK001",
+        "product_title": "Sonos Era 300",
+        "product_image": "https://images.unsplash.com/photo-1545454675-3531b543be5d",
+        "category": "Speakers",
+        "price": 449,
+        "description": "Spatial audio smart speaker with Dolby Atmos and advanced room calibration.",
+        "Specification": ["Dolby Atmos", "Wi-Fi 6", "Bluetooth 5.0", "Voice Control"],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "DRONE001",
+        "product_title": "DJI Mini 4 Pro",
+        "product_image": "https://images.unsplash.com/photo-1473968512647-3e447244af8f",
+        "category": "Drones",
+        "price": 759,
+        "description": "Ultra-lightweight drone with 4K/60fps HDR video and omnidirectional obstacle sensing.",
+        "Specification": ["249g Weight", "4K/60fps HDR", "34-min Flight Time", "O4 Video Transmission"],
+        "availability": true,
+        "rating": 4.9
+    }
+]

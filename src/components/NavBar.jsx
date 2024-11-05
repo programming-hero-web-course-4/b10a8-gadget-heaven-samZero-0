@@ -42,6 +42,7 @@ const NavBar = () => {
         <li><a>Home</a></li>
         <li><a>Statistics</a></li>
         <li><a>Dashboard</a></li>
+        <li><a>Trending Products</a></li>
        
         
       </ul>
@@ -55,6 +56,8 @@ const NavBar = () => {
         <li><NavLink to='/stats'>Statistics</NavLink></li>
      
       <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
+
+      <li><NavLink to='/trending'>Trending Products</NavLink></li>
     </ul>
   </div>
   <div className="navbar-end flex gap-5 items-center ">
