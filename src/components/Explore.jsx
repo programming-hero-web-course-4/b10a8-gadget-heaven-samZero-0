@@ -49,7 +49,7 @@ const Explore = ({gadgets}) => {
 
 
                 {/* cards */}
-                <div className="md:grid md:grid-cols-3 grid-cols-1 gap-4 flex-grow">
+                <div className="md:grid md:grid-cols-3 grid-cols-1 gap-7 flex-grow">
                     {
                         filtered.map((gadget,index)=> <Card key={index} gadget={gadget}></Card>)
                     }

@@ -20,7 +20,7 @@ const gadgets = useLoaderData() ;
               
             </Helmet>
         <Banner></Banner>
-        <div className="md:h-[450px]"></div>
+        
         <Explore gadgets={gadgets}></Explore>
         <Details></Details>
        </div>
